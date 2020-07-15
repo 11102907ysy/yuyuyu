@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title> 
+<style>
+body {
+    margin: 0;
+	background-image:url(11.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:650px;}
+	h3{font-size:20px;
+	/*padding-left: 50px;*/}
+}
+	.he{margin:50px 100px;
+	/*box-shadow: 5px 5px 2px #E0EEEE*/
+	   }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    /*background-color:rgba(245,209,76,1.00);
+	background-color:rgba(153,152,155,1.00);
+	background-color:rgba(107,121,127,1.00);*/
+	background-color:rgba(196,189,209,1.00);
+    position: fixed;
+    height: 400px;
+    overflow: auto;
+	opacity:0.9;
+	position:absolute;
+    right:120px;
+	width:200px;
+ 
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 26px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    /*background-color:rgba(126,7,7,1.00);*/
+	background-color:rgba(156,134,122,1.00);
+    color: white;
+}
+
+li a:hover:not(.active) {
+   /* background-color:rgba(119,12,12,1.00);*/
+		background-color:rgba(164,137,142,1.00);
+    color: white;
+}
+	li {
+    border-bottom: 1px solid #bbb;
+}
+ 
+    li:last-child {
+    border-bottom: none;
+}
+	.word1{color:white;
+	font-size:60px;
+	padding-left: 100px;
+	}
+	/*.mus{position: absolute;
+		top:420px;
+	    left:20px;
+	     }*/
+	.sour{position:absolute;top:380px;width:100px;left:20px;}
+	dl{padding-left:50px;}
+	.word2{font-size:50px;}
+	dd{letter-spacing:0;
+	   line-height:25px; 
+	   font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'"";
+	}
+	.word3{font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New   Roman", "serif";
+	    font-size:30px;
+	    background:rgba(238,135,42,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	.word4{
+		font-size:25px;
+	   /* background:hsla(283,17%,41%,1.00);*/
+	    background:hsla(281,73%,61%,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	h3{padding-left: 20px;}
+	ol{padding-left:50px;}
+</style>
+</head>
+<body>
+	<div class="time"></div>
+<div class="he">
+<ul>
+  <li><a href="index.html">home</a></li>
+  <li><a href="information.html">information</a></li>
+  <li><a href="hobby.html">hobby</a></li>
+  <li><a href="target.html">target</a></li>
+  <li><a class="active" href="self-introduction.html">self-introduction</a></li>
+</ul>
+	
+<div class="zong">
+<div style="opacity:0.5;position:absolute;left:50px;width:600px;height:300px;background-color:hsla(358,44%,89%,1.00);top:10px;">
+	<h3>ABOUT ME</h3>
+	<ol>
+		<li>一直是个矛盾体：时常搞不懂自己，人的复杂性向来如此吧。</li>
+		<Li>大多数时候很佛系：可能是没有经历过风浪吧。</Li>
+		<li>偶尔也会渴望些什么：就算做条咸鱼太阳太大的时候也要试着翻翻身吧。</li>
+		<li>越长大越觉得自己普通：是因为这个世界是如此得盛大灿烂吧。</li>
+	</ol> 
+	<h3>所以，永远地，平平淡淡地，热爱这个世界，热爱自己。</h3>
+	</div>
+
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;height:400px;">
+
+<div id="Date" style="opacity:0.3;position:absolute;right:20px;width:200px;height:30px;top:410px;; background-color:hsla(210,84%,78%,1.00)">
+	</div>
+
+	
+</div>
+
+</div>
+	</div>
+</body>
+<script>
+window.onload=function(){ 
+setInterval(function(){  
+var date=new Date();  
+var year=date.getFullYear();  
+var mon=date.getMonth()+1;  
+var da=date.getDate(); 
+var h=date.getHours(); 
+var m=date.getMinutes(); 
+var s=date.getSeconds();  
+var d=document.getElementById('Date');  
+d.innerHTML=+year+'年'+mon+'月'+da+'日'+h+':'+m+':'+s; },1000) }
+</script>
+</html>

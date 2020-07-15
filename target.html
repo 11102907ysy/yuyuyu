@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title></title> 
+<style>
+body {
+    margin: 0;
+	background-image:url(10.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:650px;}
+	h3{font-size:20px;
+	/*padding-left: 50px;*/}
+}
+	.he{margin:50px 100px;
+	/*box-shadow: 5px 5px 2px #E0EEEE*/
+	   }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    /*background-color:rgba(245,209,76,1.00);
+	background-color:rgba(153,152,155,1.00);
+	background-color:rgba(107,121,127,1.00);*/
+	background-color:rgba(196,189,209,1.00);
+    position: fixed;
+    height: 400px;
+    overflow: auto;
+	opacity:0.9;
+	position:absolute;
+    right:120px;
+	width:200px;
+ 
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 26px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    /*background-color:rgba(126,7,7,1.00);*/
+	background-color:rgba(156,134,122,1.00);
+    color: white;
+}
+
+li a:hover:not(.active) {
+   /* background-color:rgba(119,12,12,1.00);*/
+		background-color:rgba(164,137,142,1.00);
+    color: white;
+}
+	li {
+    border-bottom: 1px solid #bbb;
+}
+ 
+    li:last-child {
+    border-bottom: none;
+}
+	.word1{color:white;
+	font-size:60px;
+	padding-left: 100px;
+	}
+	/*.mus{position: absolute;
+		top:420px;
+	    left:20px;
+	     }*/
+	.sour{position:absolute;top:380px;width:100px;left:20px;}
+	dl{padding-left:50px;}
+	.word2{font-size:50px;}
+	dd{letter-spacing:0;
+	   line-height:25px; 
+	   font-family:Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'"";
+	}
+	.word3{font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New   Roman", "serif";
+	    font-size:30px;
+	    background:rgba(238,135,42,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	.word4{
+		font-size:25px;
+	   /* background:hsla(283,17%,41%,1.00);*/
+	    background:hsla(281,73%,61%,1.00);
+	    color:rgba(255,255,255,1.00);
+	}
+	.wo{position: absolute;left:20px;}
+</style>
+</head>
+<body>
+	<div class="time"></div>
+<div class="he">
+<ul>
+  <li><a href="index.html">home</a></li>
+  <li><a href="information.html">information</a></li>
+  <li><a href="hobby.html">hobby</a></li>
+  <li><a class="active" href="target.html">target</a></li>
+  <li><a href="self-introduction.html">self-introduction</a></li>
+</ul>
+	
+<div class="zong">
+<div style="opacity:0.5;position:absolute;left:50px;width:600px;height:300px;background-color:hsla(85,30%,70%,1.00);color:white;top:10px;">
+	<p class="wo">
+	<span style="font-size:20px;">通过英语六级</span> <br>
+  <span style="font-size:30px;color:hsla(324,95%,91%,1.00)">通过计算机二级</span> <br>
+  <span style="background-color:#B4009E;"><strong>拿到下学期奖学金</strong></span> <br>
+  <span style="font-size:40px;color:hsla(323,46%,41%,1.00)">尝试考取教师资格证</span> <br>
+	<span style="color:hsla(283,75%,20%,1.00)"><b><i>or</i></b></span> <br>
+	<span style="font-size:60px;color:hsla(298,27%,21%,1.00)"><i>考研成功</i></span> <br>
+	<span style="font-size:30px;color:hsla(330,60%,66%,1.00)">好好学英语</span>
+	</p>
+	</div>
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;height:400px;">
+
+<div id="Date" style="opacity:0.3;position:absolute;right:20px;width:200px;height:30px;top:410px;; background-color: hsla(356,63%,79%,1.00)">
+	</div>
+
+	
+</div>
+
+</div>
+	</div>
+</body>
+<script>
+window.onload=function(){ 
+setInterval(function(){  
+var date=new Date();  
+var year=date.getFullYear();  
+var mon=date.getMonth()+1;  
+var da=date.getDate(); 
+var h=date.getHours(); 
+var m=date.getMinutes(); 
+var s=date.getSeconds();  
+var d=document.getElementById('Date');  
+d.innerHTML=+year+'年'+mon+'月'+da+'日'+h+':'+m+':'+s; },1000) }
+</script>
+</html>
